@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "000000192C24C6F0E2BAA17B02E066898EF56B27C5EC209B74731A8E8EE5BFA69C40157D1D22E1DFA3",
+          "certpath": "/Users/yangling/Desktop/mapkey/map.cer",
+          "keyAlias": "map",
+          "keyPassword": "000000191F006C200960745FD5456BB171EDF6B5BC8BDDBAC19DF22FBBFF55483149D315C2D3D867FF",
+          "profile": "/Users/yangling/Desktop/mapkey/mapDebug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/yangling/Desktop/mapkey/map.p12"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",

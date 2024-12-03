@@ -9,9 +9,31 @@
       "tablet",
       "2in1"
     ],
+    "metadata": [
+      {
+        "name" : "client_id",
+        "value" : "112793141"
+      }
+    ],
     "requestPermissions": [
       {
         "name" : "ohos.permission.INTERNET"
+      },
+      {
+        "name" : "ohos.permission.LOCATION",
+        "reason": "$string:LOCATION_REASON",
+        "usedScene": {
+          "abilities" : ["EntryAbility"],
+          "when" : "always"
+        }
+      },
+      {
+        "name" : "ohos.permission.APPROXIMATELY_LOCATION",
+        "reason": "$string:LOCATION_REASON",
+        "usedScene": {
+          "abilities" : ["EntryAbility"],
+          "when" : "always"
+        }
       }
     ],
     "deliveryWithInstall": true,

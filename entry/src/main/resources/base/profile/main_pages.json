@@ -2,6 +2,9 @@
   "src": [
     "pages/Index",
     "pages/baseURL/BaseUrlPage",
-    "pages/requestPage"
+    "pages/requestPage",
+    "pages/map/mapPage",
+    "pages/location/LocationPage",
+    "pages/Line/LinePage"
   ]
 }
