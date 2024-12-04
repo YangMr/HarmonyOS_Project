@@ -5,6 +5,8 @@
     "pages/requestPage",
     "pages/map/mapPage",
     "pages/location/LocationPage",
-    "pages/Line/LinePage"
+    "pages/Line/LinePage",
+    "pages/tel/TelPage",
+    "pages/app/appPage"
   ]
 }

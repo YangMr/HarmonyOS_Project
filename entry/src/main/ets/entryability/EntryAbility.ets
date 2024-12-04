@@ -1,6 +1,8 @@
 import { abilityAccessCtrl, AbilityConstant, UIAbility, Want } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { pushService } from '@kit.PushKit';
 
 export default class EntryAbility extends UIAbility {
   async onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
@@ -13,6 +15,15 @@ export default class EntryAbility extends UIAbility {
       "ohos.permission.APPROXIMATELY_LOCATION"
     ])
 
+    // 获取Push Token
+    try {
+      const pushToken: string = await pushService.getToken();
+      console.log("ttt", pushToken)
+    } catch (err) {
+      let e: BusinessError = err as BusinessError;
+      hilog.error(0x0000, 'testTag', 'Failed to get push token: %{public}d %{public}s', e.code, e.message);
+    }
+
   }
 
   onDestroy(): void {
@@ -23,7 +34,7 @@ export default class EntryAbility extends UIAbility {
     // Main window is created, set main page for this ability
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
 
-    windowStage.loadContent('pages/location/LocationPage', (err) => {
+    windowStage.loadContent('pages/app/appPage', (err) => {
       if (err.code) {
         hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
         return;
