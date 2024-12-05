@@ -7,6 +7,8 @@
     "pages/location/LocationPage",
     "pages/Line/LinePage",
     "pages/tel/TelPage",
-    "pages/app/appPage"
+    "pages/app/appPage",
+    "pages/file/filePage",
+    "pages/textTranslateLang/translatePage"
   ]
 }
