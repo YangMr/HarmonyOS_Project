@@ -33,6 +33,12 @@
     "pages/animate/animatePage12",
     "pages/animate/animatePage13",
     "pages/animate/animatePage14",
-    "pages/animate/animatePage15"
+    "pages/animate/animatePage15",
+    "pages/animate/animateIndex",
+    "pages/animate/animateIndex2",
+    "pages/animate/currentPage1",
+    "pages/animate/currentPage2",
+    "pages/pixelMap/index1",
+    "pages/pixelMap/index2"
   ]
 }
