@@ -11,6 +11,7 @@ export default class EntryAbility extends UIAbility {
   async onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onCreate');
 
+
     // 创建程序控制管理器
     const manager = abilityAccessCtrl.createAtManager()
     await manager.requestPermissionsFromUser(this.context, [
@@ -34,6 +35,8 @@ export default class EntryAbility extends UIAbility {
   }
 
   onWindowStageCreate(windowStage: window.WindowStage): void {
+
+
     windowStage.getMainWindow().then((windowObj) => {
       this.windowObj = windowObj
       // 获取应用启动时的窗口尺寸
@@ -45,7 +48,7 @@ export default class EntryAbility extends UIAbility {
     });
 
 
-    windowStage.loadContent('pages/pixelMap/index2', (err) => {
+    windowStage.loadContent('pages/echarts/echartsPage2', (err) => {
       if (err.code) {
         hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
         return;

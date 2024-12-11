@@ -17,6 +17,12 @@
     ],
     "requestPermissions": [
       {
+        "name" : "ohos.permission.ACCELEROMETER"
+      },
+      {
+        "name" : "ohos.permission.GYROSCOPE"
+      },
+      {
         "name" : "ohos.permission.CAMERA",
         "reason": "$string:LOCATION_REASON",
         "usedScene": {
@@ -38,6 +44,14 @@
       {
         "name" : "ohos.permission.APPROXIMATELY_LOCATION",
         "reason": "$string:LOCATION_REASON",
+        "usedScene": {
+          "abilities" : ["EntryAbility"],
+          "when" : "always"
+        }
+      },
+      {
+        "name" : "ohos.permission.ACTIVITY_MOTION",
+        "reason" : "$string:s",
         "usedScene": {
           "abilities" : ["EntryAbility"],
           "when" : "always"

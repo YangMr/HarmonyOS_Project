@@ -39,6 +39,14 @@
     "pages/animate/currentPage1",
     "pages/animate/currentPage2",
     "pages/pixelMap/index1",
-    "pages/pixelMap/index2"
-  ]
+    "pages/pixelMap/index2",
+    "pages/native/nativePage",
+    "pages/native/shakePage",
+    "pages/LayoutPage",
+    "pages/echarts/echartsPage",
+    "pages/echarts/echartsPage2"
+  ],
+  "window": {
+    "designWidth": 1080
+  }
 }
