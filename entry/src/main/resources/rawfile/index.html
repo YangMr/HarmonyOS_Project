@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 300px;
+            border : 1px solid #ccc;
+            margin: 50px auto;
+            display: flex;
+        }
+        i{
+            color : red;
+        }
+        .left{
+            width: 200px;
+            border-right: 1px solid #ccc;
+            height: 300px;
+            overflow: auto;
+        }
+        .footer{
+            display: flex;
+            height: 100px;
+        }
+        .ipt{
+            width: 400px;
+        }
+        .right{
+            height : 300px;
+            overflow: auto;
+        }
+        .send{
+            flex : 1;
+            border: none;
+            outline: none;
+            background: purple;
+            color: #fff;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <label for="user">用户名:</label><input id="user" type="text"/>
+    <button id="btn">加入聊天室</button>
+</div>
+
+<div class="main">
+    <div class="left">
+        <!--            <div>欢迎<i>xxx</i>进入聊天室</div>-->
+    </div>
+    <div class="right">
+
+    </div>
+
+
+</div>
+<div class="footer">
+    <input class="ipt" placeholder="恶语伤人心" type="text"/>
+    <button class="send">发送</button>
+
+
+</div>
+<p id="pid" style="font-size : 50px">hello 你好</p>
+<h1 id="h" style="font-size : 80px">我要调用鸿蒙的方法</h1>
+</body>
+</html>
+<script>
+
+    const pid = document.getElementById("pid")
+
+    function changeText(){
+        pid.innerText = "6666666666"
+    }
+
+    const h = document.getElementById("h")
+    h.addEventListener("click", () => {
+            objName.objKey1()
+    })
+</script>

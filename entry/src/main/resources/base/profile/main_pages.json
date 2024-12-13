@@ -44,7 +44,14 @@
     "pages/native/shakePage",
     "pages/LayoutPage",
     "pages/echarts/echartsPage",
-    "pages/echarts/echartsPage2"
+    "pages/echarts/echartsPage2",
+    "pages/cache/cachePage",
+    "pages/cache/readPage",
+    "pages/hybird/hybirdPage",
+    "pages/websocket/websocketPage",
+    "pages/websocket/WebsocketIndex",
+    "pages/websocket/WebsocketChart",
+    "pages/websocket/WebSocketRoom"
   ],
   "window": {
     "designWidth": 1080
