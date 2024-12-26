@@ -48,7 +48,7 @@ export default class EntryAbility extends UIAbility {
     });
 
 
-    windowStage.loadContent('pages/websocket/WebSocketRoom', (err) => {
+    windowStage.loadContent('pages/work/workPage', (err) => {
       if (err.code) {
         hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
         return;

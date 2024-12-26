@@ -51,7 +51,10 @@
     "pages/websocket/websocketPage",
     "pages/websocket/WebsocketIndex",
     "pages/websocket/WebsocketChart",
-    "pages/websocket/WebSocketRoom"
+    "pages/websocket/WebSocketRoom",
+    "pages/websocket/animPage",
+    "pages/rander/randerPage",
+    "pages/work/workPage"
   ],
   "window": {
     "designWidth": 1080

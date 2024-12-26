@@ -75,6 +75,21 @@ struct WebSocketRoom {
 
   build() {
     Column() {
+
+      RelativeContainer() {
+        Row() {
+
+        }
+        .border({
+          width: 4,
+          color: Color.Blue
+        })
+      }
+      .width(64)
+      .height(64)
+      .backgroundColor(Color.Gray)
+      .borderRadius(75)
+
       Row() {
         TextInput({ placeholder: "请输入用户名", text: $$this.nickName })
           .layoutWeight(1)
